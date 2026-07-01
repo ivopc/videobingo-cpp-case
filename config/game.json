@@ -1,0 +1,57 @@
+{
+  "window": {
+    "title": "Simulador de Sorteio de Bingo",
+    "width": 1280,
+    "height": 720,
+    "virtualWidth": 1280,
+    "virtualHeight": 720,
+    "framerateLimit": 60,
+    "verticalSync": true,
+    "resizable": true
+  },
+  "assets": {
+    "atlasImage": "assets/images/GameAssets.png",
+    "atlasData": "assets/atlas/sprites.json",
+    "font": "assets/fonts/InterVariable.ttf",
+    "balls": [
+      "ball_0", "ball_1", "ball_2", "ball_3", "ball_4",
+      "ball_5", "ball_6", "ball_7", "ball_8", "ball_9"
+    ],
+    "buttonPlay": "button_play"
+  },
+  "layout": {
+    "button": {
+      "x": 540,
+      "y": 585,
+      "scale": 1.0
+    },
+    "balls": {
+      "startX": -180,
+      "y": 260,
+      "targetStartX": 310,
+      "spacing": 170,
+      "scale": 1.0
+    },
+    "history": {
+      "x": 40,
+      "y": 40,
+      "lineHeight": 28,
+      "fontSize": 20
+    }
+  },
+  "animation": {
+    "durationSeconds": 0.85,
+    "delayBetweenBallsSeconds": 0.28,
+    "easing": "easeOutCubic"
+  },
+  "history": {
+    "maxVisible": 5
+  },
+  "logging": {
+    "file": "sorteio.log"
+  },
+  "lua": {
+    "enabled": false,
+    "entryScript": "scripts/bingo.lua"
+  }
+}
