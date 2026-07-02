@@ -45,7 +45,7 @@ Orquestradores principais da aplicação no geral:
 Application carrega Config, cria Window, inicializa serviços e sistemas importantes como AssetManager e GameCoordinator, executa e delega game loop e update/render.
 GameCoordinator tem o estado atual da aplicação, chama BingoDrawService quando o botão é clicado, cria animações no BallAnimationPool, atualiza HistoryService e LogService, gerencia eventos LUA, controla interação do botão, os eventos são controlados ali.
 
--/src/domain - Dominio
+- /src/domain - Dominio
 Responśavel por regras de negócio no sentido mais cru da aplicação, por exemplo: sorteia 4 numeros e garante que sejam diferentes. Por essência não conhece nada do SFML, Sprites, arquivo de recursos, as windows ou scripts lua.
 
 - /src/data - Data oriented design
