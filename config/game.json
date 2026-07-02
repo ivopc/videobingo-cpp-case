@@ -30,7 +30,7 @@
       "y": 260,
       "targetStartX": 310,
       "spacing": 170,
-      "scale": 1.0
+      "scale": 0.45
     },
     "history": {
       "x": 40,
@@ -51,7 +51,7 @@
     "file": "sorteio.log"
   },
   "lua": {
-    "enabled": false,
+    "enabled": true,
     "entryScript": "scripts/bingo.lua"
   }
 }

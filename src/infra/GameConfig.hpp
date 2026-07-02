@@ -16,10 +16,6 @@ struct WindowConfig {
     bool resizable = true;
 };
 
-// The received assets are a single spritesheet (atlasImage) described by a
-// Leshy SpriteSheet Tool JSON (atlasData). ballFrames[number] and
-// buttonPlayFrame hold the frame names inside that atlas, so real asset
-// names never get hardcoded in C++ (see 07_JSON_CONFIG_SPEC.md).
 struct AssetConfig {
     std::string atlasImage;
     std::string atlasData;

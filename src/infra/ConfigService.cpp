@@ -149,8 +149,6 @@ LuaConfig parseLua(const json& root) {
         return config;
     }
 
-    // Lua is an optional automation layer: a missing/absent script is
-    // resolved later by falling back to NoOpScriptingService, not here.
     const json& node = root.at("lua");
     config.enabled = node.value("enabled", false);
     config.entryScript = node.value("entryScript", std::string());
